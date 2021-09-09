@@ -1,0 +1,4 @@
+{
+    "screenshortPath": "./screenshort",
+    "screenshortPathPattern": "${DATE}_${TIME}/${FIXTURE}.png"
+}

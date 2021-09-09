@@ -1,0 +1,28 @@
+{
+  "name": "plista-login-e2e",
+  "version": "1.0.0",
+  "description": "Plista login application automation",
+  "main": "index.js",
+  "scripts": {
+    "test": "testcafe chrome tests -s takeOnFails = true --reporter list --disable-page caching",
+    "test:chrome": "testcafe -c 5 chrome ./tests/passwordRecoveryTest.js -s takeOnFails = true --reporter list --disable-page caching",
+    "test:firefox": "testcafe firefox ./tests/passwordRecoveryTest.js -s takeOnFails = true --reporter list --disable-page caching"
+    
+  },
+  "keywords": [
+    "Plista",
+    "Testing",
+    "Automation"
+  ],
+  "author": "Shahiduzzaman",
+  "license": "ISC",
+  "dependencies": {
+    "node-xlsx": "^0.17.1",
+    "pettier": "^1.1.0",
+    "testcafe": "^1.15.3",
+    "testcafe-reporter-list": "^2.1.0"
+  },
+  "devDependencies": {
+    "xpath-to-css": "^1.0.5"
+  }
+}
